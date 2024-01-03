@@ -130,7 +130,88 @@ p {
   z-index: -1;
   opacity: 0.1;
 }
+@media (min-width: 300px){
+  body {
+    font-size: 18px;
+  }
+  .menu, .exit {
+    display:none;
 
+  }
+  ul {
+    display:flex;
+    background: none;
+    height: unset;
+    position: unset;
+    text-transform: uppercase;
+  }
+  ul li a {
+    font-size: .9em;
+    margin-left: unset;
+    padding:0 .5rem;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 1em;
+  }
+  .btn-container{
+    display: flex;
+    justify-content: center;
+  }
+  .cta {
+    padding: .7em 1.2em;
+  }
+  .outline{
+    margin-left: 1em;
+  }
+}
+@media (min-width: 850px){
+  body {
+    background: white;
+  }
+  .left-col{
+    width: 60%;
+    background: #AADFC5;
+    position: absolute;
+    top:0;
+    height: 100vh;
+    z-index: -1;
+  }
+  main {
+    text-align: left;
+    width:90%;
+    margin-left: 2em;
+  }
+  p {
+    width:80%;
+margin-left: 0;
+  }
+  .btn-container{
+    justify-content: left;
+  }
+  h1:before {
+    width:10%;
+    left:0;
+  }
+  .content-wrapper{
+    display:flex;
+  }
+  .plant-container{
+    position: unset;
+    width:auto;
+    height:auto;
+    display:grid;
+    place-content:center;
+    margin-top: 4em;
+    margin-right: 2em;
+  }
+  .plant {
+    position: unset;
+    width:90%;
+  }
+}
   </style>
   </head>
   <body>
